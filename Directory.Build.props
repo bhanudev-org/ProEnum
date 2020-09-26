@@ -1,0 +1,59 @@
+<Project>
+  <PropertyGroup>
+    <Deterministic>true</Deterministic>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+
+    <Authors>Bhanu Prakash Korthiwada</Authors>
+    <Copyright>Copyright © Bhanu Prakash Korthiwada</Copyright>
+    <Company>Bhanu Prakash Korthiwada</Company>
+    <NeutralLanguage>en-US</NeutralLanguage>
+
+    <RepositoryUrl>https://github.com/BhanuKorthiwada/ProEnum</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+
+    <PackageProjectUrl>https://github.com/BhanuKorthiwada/ProEnum</PackageProjectUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <IsPackable>true</IsPackable>
+
+    <NoWarn>$(NoWarn);</NoWarn>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+
+    <SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="$(IsPackable) == True">
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+
+  <!-- File Includes -->
+  <ItemGroup>
+    <None Include="../../.editorconfig" Pack="false" Link=".editorconfig" />
+    <None Include="../../docs/icon.png" Pack="true" Visible="false" PackagePath="" />
+  </ItemGroup>
+
+  <!-- Target Frameworks -->
+  <PropertyGroup>
+    <ApplicationTargetFrameWork>net5.0</ApplicationTargetFrameWork>
+    <LibraryTargetFrameWork>net5.0</LibraryTargetFrameWork>
+    <LibraryTargetFrameWorks>netstandard2.0;net5.0</LibraryTargetFrameWorks>
+  </PropertyGroup>
+
+  <!-- MinVer -->
+  <PropertyGroup>
+    <MinVerTagPrefix>v</MinVerTagPrefix>
+    <MinVerDefaultPreReleasePhase>preview</MinVerDefaultPreReleasePhase>
+    <!--<MinVerVerbosity>normal</MinVerVerbosity>-->
+    <MinVerMinimumMajorMinor>1.0</MinVerMinimumMajorMinor>
+  </PropertyGroup>
+
+  <!-- Library: NuGet Default Dependencies -->
+  <ItemGroup Condition="$(IsPackable) == 'true'">
+    <PackageReference Include="MinVer" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" />
+  </ItemGroup>
+</Project>
