@@ -1,0 +1,44 @@
+<Project>
+  <!-- https://docs.microsoft.com/en-us/nuget/concepts/package-versioning -->
+  <!-- Versions -->
+  <PropertyGroup>
+    <AspNetVersion>5.0.0-rc.*</AspNetVersion>
+    <MongoDbVersion>2.11.*</MongoDbVersion>
+  </PropertyGroup>
+
+  <!-- Packages : Code Analysis -->
+  <ItemGroup>
+    <PackageReference Update="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.3.0" PrivateAssets="All" />
+    <PackageReference Update="StyleCop.Analyzers" Version="1.1.118" PrivateAssets="All" />
+  </ItemGroup>
+
+  <!-- Packages : Microsoft -->
+  <ItemGroup>
+    <PackageReference Update="Microsoft.Extensions.Logging" Version="$(AspNetVersion)" />
+    <PackageReference Update="Microsoft.Extensions.Logging.Abstractions" Version="$(AspNetVersion)" />
+    <PackageReference Update="Microsoft.Extensions.Configuration" Version="$(AspNetVersion)" />
+    <PackageReference Update="Microsoft.Extensions.Configuration.Abstractions" Version="$(AspNetVersion)" />
+    <PackageReference Update="Microsoft.Extensions.DependencyInjection" Version="$(AspNetVersion)" />
+    <PackageReference Update="Microsoft.Extensions.DependencyInjection.Abstractions" Version="$(AspNetVersion)" />
+    <PackageReference Update="Microsoft.Extensions.Options" Version="$(AspNetVersion)" />
+    <PackageReference Update="Microsoft.Extensions.Options.ConfigurationExtensions" Version="$(AspNetVersion)" />
+
+    <PackageReference Update="System.Text.Json" Version="$(AspNetVersion)" />
+
+    <PackageReference Update="Microsoft.DependencyValidation.Analyzers" Version="0.11.0" />
+    <PackageReference Update="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+    <PackageReference Update="System.ComponentModel.Annotations" Version="$(AspNetVersion)" />
+  </ItemGroup>
+
+  <!-- Packages : Third Party -->
+  <ItemGroup>
+    <PackageReference Update="MongoDB.Bson" Version="$(MongoDbVersion)" />
+    <PackageReference Update="MongoDB.Driver" Version="$(MongoDbVersion)" />
+    <PackageReference Update="MongoDB.Driver.Core" Version="$(MongoDbVersion)" />
+    <PackageReference Update="MongoDB.Driver.GridFS" Version="$(MongoDbVersion)" />
+
+    <PackageReference Update="MinVer" Version="2.3.0" PrivateAssets="All" />
+
+    <PackageReference Update="Newtonsoft.Json" Version="[12.0.1,12.0.3]" />
+  </ItemGroup>
+</Project>

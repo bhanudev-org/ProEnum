@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>$(LibraryTargetFrameWorks)</TargetFrameworks>
+    <PackageDescription>ProEnum - JSON Converter/Serialization using System.Text.Json</PackageDescription>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProEnum\ProEnum.csproj" />
+  </ItemGroup>
+
+</Project>
