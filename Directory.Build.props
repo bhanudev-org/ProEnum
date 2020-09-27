@@ -17,6 +17,7 @@
     <PackageIcon>icon.png</PackageIcon>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <IsPackable>true</IsPackable>
 
     <NoWarn>$(NoWarn);</NoWarn>
