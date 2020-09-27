@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>$(LibraryTargetFrameWorks)</TargetFrameworks>
+    <PackageDescription>ProEnum - Custom Enumeration implementation</PackageDescription>
   </PropertyGroup>
 
 </Project>

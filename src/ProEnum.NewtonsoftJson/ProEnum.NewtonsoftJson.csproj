@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>$(LibraryTargetFrameWorks)</TargetFrameworks>
+    <PackageDescription>ProEnum - JSON Converter/Serialization using Newtonsoft.Json</PackageDescription>
   </PropertyGroup>
 
   <ItemGroup>
