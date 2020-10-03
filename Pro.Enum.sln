@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProEnum", "src\ProEnum\ProEnum.csproj", "{A5054658-CC6C-448A-83F3-DED43564EAC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pro.Enum", "src\Pro.Enum\Pro.Enum.csproj", "{A5054658-CC6C-448A-83F3-DED43564EAC2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProEnum.NewtonsoftJson", "src\ProEnum.NewtonsoftJson\ProEnum.NewtonsoftJson.csproj", "{0F42384F-C3E0-4794-B7CE-DB3FA61571F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pro.Enum.NewtonsoftJson", "src\Pro.Enum.NewtonsoftJson\Pro.Enum.NewtonsoftJson.csproj", "{0F42384F-C3E0-4794-B7CE-DB3FA61571F0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution", "solution", "{2E0F654A-FAD5-4BEE-9C7C-8051436E66FF}"
 	ProjectSection(SolutionItems) = preProject
@@ -17,7 +17,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution", "solution", "{2E
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProEnum.Json", "src\ProEnum.Json\ProEnum.Json.csproj", "{8BBD6BA8-9658-496F-B7A2-D55842635582}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pro.Enum.Json", "src\Pro.Enum.Json\Pro.Enum.Json.csproj", "{8BBD6BA8-9658-496F-B7A2-D55842635582}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pro.Enum.Tests", "src\Pro.Enum.Tests\Pro.Enum.Tests.csproj", "{0CF41615-CEB5-4656-B897-BB77A2D90DA3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{8BBD6BA8-9658-496F-B7A2-D55842635582}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BBD6BA8-9658-496F-B7A2-D55842635582}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BBD6BA8-9658-496F-B7A2-D55842635582}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CF41615-CEB5-4656-B897-BB77A2D90DA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CF41615-CEB5-4656-B897-BB77A2D90DA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CF41615-CEB5-4656-B897-BB77A2D90DA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CF41615-CEB5-4656-B897-BB77A2D90DA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
