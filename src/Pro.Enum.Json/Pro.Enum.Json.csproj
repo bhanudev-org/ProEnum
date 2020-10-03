@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ProEnum\ProEnum.csproj" />
+    <ProjectReference Include="..\Pro.Enum\Pro.Enum.csproj" />
   </ItemGroup>
 
 </Project>
