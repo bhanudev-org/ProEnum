@@ -27,7 +27,8 @@ namespace Pro.Enum
 
         public int Value { get; }
 
-        public int CompareTo(object other) => Value.CompareTo(((Enumeration)other).Value);
+        public int CompareTo(object? other) => other != null ? Value.CompareTo(((Enumeration)other).Value) : default;
+
 
 
         public override string ToString() => Name;
@@ -39,7 +40,7 @@ namespace Pro.Enum
             return fields.Select(f => f.GetValue(null)).Cast<TEnum>();
         }
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             if(!(obj is Enumeration otherValue))
                 return false;
