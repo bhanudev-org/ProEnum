@@ -43,7 +43,7 @@ namespace Pro.Enum.Tests
         {
             BloodGroup.ABNegative.ShouldNotBeNull();
             BloodGroup.ABNegative.Name.ShouldNotBeNull();
-            BloodGroup.ABNegative.Value.ShouldNotBeNull();
+            BloodGroup.ABNegative.Value.ShouldNotBe(0);
 
             BloodGroup.ABNegative.Name.ShouldBe("AB -ve");
             BloodGroup.ABNegative.Value.ShouldBe(8);

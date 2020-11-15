@@ -2,13 +2,13 @@
   <!-- https://docs.microsoft.com/en-us/nuget/concepts/package-versioning -->
   <!-- Versions -->
   <PropertyGroup>
-    <AspNetVersion>5.0.0-rc.*</AspNetVersion>
-    <MongoDbVersion>2.11.*</MongoDbVersion>
+    <AspNetVersion>5.0.0</AspNetVersion>
+    <MongoDbVersion>2.11.4</MongoDbVersion>
   </PropertyGroup>
 
   <!-- Packages : Code Analysis -->
   <ItemGroup>
-    <PackageReference Update="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.3.0" PrivateAssets="All" />
+    <PackageReference Update="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.3.1" PrivateAssets="All" />
     <PackageReference Update="StyleCop.Analyzers" Version="1.1.118" PrivateAssets="All" />
   </ItemGroup>
 
