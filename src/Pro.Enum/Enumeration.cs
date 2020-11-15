@@ -30,6 +30,7 @@ namespace Pro.Enum
         public int CompareTo(object? other) => other != null ? Value.CompareTo(((Enumeration)other).Value) : default;
 
 
+
         public override string ToString() => Name;
 
         public static IEnumerable<TEnum> GetAll<TEnum>() where TEnum : Enumeration
@@ -43,7 +44,7 @@ namespace Pro.Enum
         {
             if(!(obj is Enumeration otherValue))
                 return false;
-            
+
             var typeMatches = GetType() == obj.GetType();
             var valueMatches = Value.Equals(otherValue.Value);
 
