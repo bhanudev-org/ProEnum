@@ -25,7 +25,7 @@ namespace Pro.Enum.Json
             var name = value.GetType().GetProperty(_nameProperty, BindingFlags.Public | BindingFlags.Instance);
             if(name == null) throw new JsonException($"Error while writing JSON for {value}");
 
-            writer.WriteStringValue(name.GetValue(value).ToString());
+            writer.WriteStringValue(name.GetValue(value)?.ToString() ?? string.Empty);
         }
 
         private static Enumeration GetEnumerationFromJson(string nameOrValue, Type objectType)
