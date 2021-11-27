@@ -39,10 +39,10 @@
 
   <!-- Target Frameworks -->
   <PropertyGroup>
-    <ApplicationTargetFramework>net5.0</ApplicationTargetFramework>
-    <LibraryTargetFramework>net5.0</LibraryTargetFramework>
-    <LibraryTargetFrameworks>netcoreapp3.1;net5.0</LibraryTargetFrameworks>
-    <LibraryTargetFrameworksAll>netstandard2.0;netstandard2.1;netcoreapp3.1;net5.0</LibraryTargetFrameworksAll>
+    <ApplicationTargetFramework>net6.0</ApplicationTargetFramework>
+    <LibraryTargetFramework>net6.0</LibraryTargetFramework>
+    <LibraryTargetFrameworks>netcoreapp3.1;net5.0;net6.0</LibraryTargetFrameworks>
+    <LibraryTargetFrameworksAll>netstandard2.0;netstandard2.1;netcoreapp3.1;net5.0;net6.0</LibraryTargetFrameworksAll>
   </PropertyGroup>
 
   <!-- MinVer -->
