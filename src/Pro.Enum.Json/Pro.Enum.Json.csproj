@@ -1,7 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>$(LibraryTargetFrameWorks)</TargetFrameworks>
+    <TargetFrameworks>$(LibraryTargetFrameworksAll)</TargetFrameworks>
+    <PackageTags>DDD;Pro;ProEnum;Enum;Enumeration;JSON;System.Text.Json;netstandard2.0;net5;</PackageTags>
     <PackageDescription>ProEnum - JSON Converter/Serialization using System.Text.Json</PackageDescription>
   </PropertyGroup>
 
@@ -10,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ProEnum\ProEnum.csproj" />
+    <ProjectReference Include="..\Pro.Enum\Pro.Enum.csproj" />
   </ItemGroup>
 
 </Project>

@@ -33,15 +33,16 @@
 
   <!-- File Includes -->
   <ItemGroup>
-    <None Include="../../.editorconfig" Pack="false" Link=".editorconfig" />
+    <!--<None Include="../../.editorconfig" Pack="false" Link=".editorconfig" />-->
     <None Include="../../docs/icon.png" Pack="true" Visible="false" PackagePath="" />
   </ItemGroup>
 
   <!-- Target Frameworks -->
   <PropertyGroup>
-    <ApplicationTargetFrameWork>net5.0</ApplicationTargetFrameWork>
-    <LibraryTargetFrameWork>net5.0</LibraryTargetFrameWork>
-    <LibraryTargetFrameWorks>netstandard2.0;net5.0</LibraryTargetFrameWorks>
+    <ApplicationTargetFramework>net5.0</ApplicationTargetFramework>
+    <LibraryTargetFramework>net5.0</LibraryTargetFramework>
+    <LibraryTargetFrameworks>netcoreapp3.1;net5.0</LibraryTargetFrameworks>
+    <LibraryTargetFrameworksAll>netstandard2.0;netstandard2.1;netcoreapp3.1;net5.0</LibraryTargetFrameworksAll>
   </PropertyGroup>
 
   <!-- MinVer -->
